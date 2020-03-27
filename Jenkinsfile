@@ -1,4 +1,4 @@
-
+h
 node {
     // Get Artifactory server instance, defined in the Artifactory Plugin administration page.
     def server = Artifactory.server "aitifactory"
@@ -9,7 +9,7 @@ node {
  rtMaven.tool = "maven"
 
     stage('Clone sources') {
-        git url: 'https://github.com/duorg/webapp.git'
+        git url: 'https://github.com/eschnack0/webapp.git'
     }
 
     stage('Artifactory configuration') {
